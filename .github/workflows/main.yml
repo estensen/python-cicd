@@ -21,9 +21,10 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Install black
+    - name: Install linters
       run: |
         pip install black
+        pip install bandit
     - name: Lint
       run: |
         black src tests
