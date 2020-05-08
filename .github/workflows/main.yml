@@ -29,9 +29,4 @@ jobs:
       run: |
         black src tests
         bandit -r src
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v1
-      with:
-       languages: python
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v1
+
